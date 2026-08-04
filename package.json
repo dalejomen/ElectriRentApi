@@ -1,0 +1,27 @@
+{
+  "name": "electrirentapi",
+  "version": "1.0.0",
+  "description": "API REST para gestión de alquiler de vehículos eléctricos con Swagger",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "swagger",
+    "api"
+  ],
+  "author": "Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.0",
+    "express": "^4.21.0",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
