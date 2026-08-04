@@ -77,6 +77,32 @@ function buildUpdateQuery(id, payload) {
  *   get:
  *     summary: Listar direcciones
  *     tags: [Addresses]
+ *     parameters:
+ *       - in: query
+ *         name: country
+ *         schema:
+ *           type: string
+ *         example: Colombia
+ *       - in: query
+ *         name: city
+ *         schema:
+ *           type: string
+ *         example: Bogotá
+ *       - in: query
+ *         name: is_verified
+ *         schema:
+ *           type: boolean
+ *         example: true
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: integer
+ *         example: 50
+ *       - in: query
+ *         name: offset
+ *         schema:
+ *           type: integer
+ *         example: 0
  *     responses:
  *       200:
  *         description: Lista de direcciones
@@ -146,6 +172,52 @@ router.get("/:id", async (req, res) => {
  *   post:
  *     summary: Crear una dirección
  *     tags: [Addresses]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - country
+ *               - city
+ *               - address_line1
+ *               - latitude
+ *               - longitude
+ *             properties:
+ *               country:
+ *                 type: string
+ *                 example: Colombia
+ *               state:
+ *                 type: string
+ *                 example: Cundinamarca
+ *               city:
+ *                 type: string
+ *                 example: Bogotá
+ *               neighborhood:
+ *                 type: string
+ *                 example: Chapinero
+ *               address_line1:
+ *                 type: string
+ *                 example: Calle 100 # 15-20
+ *               address_line2:
+ *                 type: string
+ *                 example: Apto 302
+ *               postal_code:
+ *                 type: string
+ *                 example: 110111
+ *               latitude:
+ *                 type: number
+ *                 example: 4.710989
+ *               longitude:
+ *                 type: number
+ *                 example: -74.07209
+ *               reference:
+ *                 type: string
+ *                 example: Prueba
+ *               is_verified:
+ *                 type: boolean
+ *                 example: true
  *     responses:
  *       201:
  *         description: Dirección creada
@@ -173,6 +245,41 @@ router.post("/", async (req, res) => {
  *   put:
  *     summary: Actualizar una dirección
  *     tags: [Addresses]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         example: 123e4567-e89b-12d3-a456-426614174000
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               country:
+ *                 type: string
+ *                 example: Colombia
+ *               city:
+ *                 type: string
+ *                 example: Bogotá
+ *               address_line1:
+ *                 type: string
+ *                 example: Carrera 7 # 45-67
+ *               latitude:
+ *                 type: number
+ *                 example: 4.710989
+ *               longitude:
+ *                 type: number
+ *                 example: -74.07209
+ *               reference:
+ *                 type: string
+ *                 example: Prueba actualizada
+ *               is_verified:
+ *                 type: boolean
+ *                 example: true
  *     responses:
  *       200:
  *         description: Dirección actualizada
