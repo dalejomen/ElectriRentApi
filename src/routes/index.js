@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const addressesRoutes = require("./addresses");
 
 /**
  * @openapi
@@ -53,5 +54,7 @@ router.get("/vehicles", (req, res) => {
     { id: "v2", model: "Nissan Leaf", chargeLevel: 62 }
   ]);
 });
+
+router.use("/addresses", addressesRoutes);
 
 module.exports = router;
