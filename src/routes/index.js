@@ -18,6 +18,7 @@ const hostsRoutes = require("./hosts");
 const messageAttachmentsRoutes = require("./messageAttachments");
 const messageReadsRoutes = require("./messageReads");
 const messagesRoutes = require("./messages");
+const paymentMethodsRoutes = require("./paymentMethods");
 
 /**
  * @openapi
@@ -90,5 +91,6 @@ router.use("/hosts", hostsRoutes);
 router.use("/message-attachments", messageAttachmentsRoutes);
 router.use("/message-reads", messageReadsRoutes);
 router.use("/messages", messagesRoutes);
+router.use("/payment-methods", paymentMethodsRoutes);
 
 module.exports = router;
