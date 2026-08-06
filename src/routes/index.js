@@ -31,6 +31,7 @@ const reviewVotesRoutes = require("./reviewVotes");
 const reviewsRoutes = require("./reviews");
 const rolesRoutes = require("./roles");
 const socialAccountsRoutes = require("./socialAccounts");
+const userRolesRoutes = require("./userRoles");
 
 /**
  * @openapi
@@ -116,5 +117,6 @@ router.use("/review-votes", reviewVotesRoutes);
 router.use("/reviews", reviewsRoutes);
 router.use("/roles", rolesRoutes);
 router.use("/social-accounts", socialAccountsRoutes);
+router.use("/user-roles", userRolesRoutes);
 
 module.exports = router;
