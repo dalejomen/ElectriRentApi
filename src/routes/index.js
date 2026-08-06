@@ -17,6 +17,7 @@ const favoritesRoutes = require("./favorites");
 const hostsRoutes = require("./hosts");
 const messageAttachmentsRoutes = require("./messageAttachments");
 const messageReadsRoutes = require("./messageReads");
+const messagesRoutes = require("./messages");
 
 /**
  * @openapi
@@ -88,5 +89,6 @@ router.use("/favorites", favoritesRoutes);
 router.use("/hosts", hostsRoutes);
 router.use("/message-attachments", messageAttachmentsRoutes);
 router.use("/message-reads", messageReadsRoutes);
+router.use("/messages", messagesRoutes);
 
 module.exports = router;
