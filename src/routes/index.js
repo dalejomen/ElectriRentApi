@@ -20,6 +20,7 @@ const messageReadsRoutes = require("./messageReads");
 const messagesRoutes = require("./messages");
 const paymentMethodsRoutes = require("./paymentMethods");
 const paymentsRoutes = require("./payments");
+const platformFeeRulesRoutes = require("./platformFeeRules");
 
 /**
  * @openapi
@@ -94,5 +95,6 @@ router.use("/message-reads", messageReadsRoutes);
 router.use("/messages", messagesRoutes);
 router.use("/payment-methods", paymentMethodsRoutes);
 router.use("/payments", paymentsRoutes);
+router.use("/platform-fee-rules", platformFeeRulesRoutes);
 
 module.exports = router;
