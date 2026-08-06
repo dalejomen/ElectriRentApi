@@ -13,6 +13,7 @@ const chargingSessionsRoutes = require("./chargingSessions");
 const connectorsRoutes = require("./connectors");
 const conversationParticipantsRoutes = require("./conversationParticipants");
 const conversationsRoutes = require("./conversations");
+const favoritesRoutes = require("./favorites");
 
 /**
  * @openapi
@@ -80,5 +81,6 @@ router.use("/charging-sessions", chargingSessionsRoutes);
 router.use("/connectors", connectorsRoutes);
 router.use("/conversation-participants", conversationParticipantsRoutes);
 router.use("/conversations", conversationsRoutes);
+router.use("/favorites", favoritesRoutes);
 
 module.exports = router;
