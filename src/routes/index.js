@@ -26,6 +26,7 @@ const reportExecutionsRoutes = require("./reportExecutions");
 const reportExportsRoutes = require("./reportExports");
 const reportSchedulesRoutes = require("./reportSchedules");
 const reviewRepliesRoutes = require("./reviewReplies");
+const reviewReportsRoutes = require("./reviewReports");
 
 /**
  * @openapi
@@ -106,5 +107,6 @@ router.use("/report-executions", reportExecutionsRoutes);
 router.use("/report-exports", reportExportsRoutes);
 router.use("/report-schedules", reportSchedulesRoutes);
 router.use("/review-replies", reviewRepliesRoutes);
+router.use("/review-reports", reviewReportsRoutes);
 
 module.exports = router;
