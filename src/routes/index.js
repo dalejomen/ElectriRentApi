@@ -24,6 +24,7 @@ const platformFeeRulesRoutes = require("./platformFeeRules");
 const reportDefinitionsRoutes = require("./reportDefinitions");
 const reportExecutionsRoutes = require("./reportExecutions");
 const reportExportsRoutes = require("./reportExports");
+const reportSchedulesRoutes = require("./reportSchedules");
 
 /**
  * @openapi
@@ -102,5 +103,6 @@ router.use("/platform-fee-rules", platformFeeRulesRoutes);
 router.use("/report-definitions", reportDefinitionsRoutes);
 router.use("/report-executions", reportExecutionsRoutes);
 router.use("/report-exports", reportExportsRoutes);
+router.use("/report-schedules", reportSchedulesRoutes);
 
 module.exports = router;
