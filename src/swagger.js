@@ -9,7 +9,7 @@ const options = {
       description: "API REST para gestionar alquileres de vehículos eléctricos."
     },
     servers: [{ url: "http://localhost:3000" }],
-    tags: [{ name: "Health" }, { name: "Vehicles" }, { name: "Addresses" }, { name: "BookingHistory" }, { name: "Bookings" }, { name: "ChargerConnectors" }, { name: "ChargerImages" }, { name: "ChargerPriceRules" }, { name: "ChargerSettings" }, { name: "ChargerWeeklySchedule" }, { name: "Chargers" }, { name: "ChargingSessions" }, { name: "Connectors" }]
+    tags: [{ name: "Health" }, { name: "Vehicles" }, { name: "Addresses" }, { name: "BookingHistory" }, { name: "Bookings" }, { name: "ChargerConnectors" }, { name: "ChargerImages" }, { name: "ChargerPriceRules" }, { name: "ChargerSettings" }, { name: "ChargerWeeklySchedule" }, { name: "Chargers" }, { name: "ChargingSessions" }, { name: "Connectors" }, { name: "ConversationParticipants" }]
   },
   apis: ["./src/routes/*.js"]
 };
