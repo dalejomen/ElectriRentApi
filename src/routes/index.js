@@ -21,6 +21,7 @@ const messagesRoutes = require("./messages");
 const paymentMethodsRoutes = require("./paymentMethods");
 const paymentsRoutes = require("./payments");
 const platformFeeRulesRoutes = require("./platformFeeRules");
+const reportDefinitionsRoutes = require("./reportDefinitions");
 
 /**
  * @openapi
@@ -96,5 +97,6 @@ router.use("/messages", messagesRoutes);
 router.use("/payment-methods", paymentMethodsRoutes);
 router.use("/payments", paymentsRoutes);
 router.use("/platform-fee-rules", platformFeeRulesRoutes);
+router.use("/report-definitions", reportDefinitionsRoutes);
 
 module.exports = router;
