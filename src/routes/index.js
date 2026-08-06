@@ -7,6 +7,7 @@ const chargerConnectorsRoutes = require("./chargerConnectors");
 const chargerImagesRoutes = require("./chargerImages");
 const chargerPriceRulesRoutes = require("./chargerPriceRules");
 const chargerSettingsRoutes = require("./chargerSettings");
+const chargerWeeklyScheduleRoutes = require("./chargerWeeklySchedule");
 
 /**
  * @openapi
@@ -68,5 +69,6 @@ router.use("/charger-connectors", chargerConnectorsRoutes);
 router.use("/charger-images", chargerImagesRoutes);
 router.use("/charger-price-rules", chargerPriceRulesRoutes);
 router.use("/charger-settings", chargerSettingsRoutes);
+router.use("/charger-weekly-schedule", chargerWeeklyScheduleRoutes);
 
 module.exports = router;
