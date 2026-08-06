@@ -23,6 +23,7 @@ const paymentsRoutes = require("./payments");
 const platformFeeRulesRoutes = require("./platformFeeRules");
 const reportDefinitionsRoutes = require("./reportDefinitions");
 const reportExecutionsRoutes = require("./reportExecutions");
+const reportExportsRoutes = require("./reportExports");
 
 /**
  * @openapi
@@ -100,5 +101,6 @@ router.use("/payments", paymentsRoutes);
 router.use("/platform-fee-rules", platformFeeRulesRoutes);
 router.use("/report-definitions", reportDefinitionsRoutes);
 router.use("/report-executions", reportExecutionsRoutes);
+router.use("/report-exports", reportExportsRoutes);
 
 module.exports = router;
