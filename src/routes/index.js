@@ -10,6 +10,7 @@ const chargerSettingsRoutes = require("./chargerSettings");
 const chargerWeeklyScheduleRoutes = require("./chargerWeeklySchedule");
 const chargersRoutes = require("./chargers");
 const chargingSessionsRoutes = require("./chargingSessions");
+const connectorsRoutes = require("./connectors");
 
 /**
  * @openapi
@@ -74,5 +75,6 @@ router.use("/charger-settings", chargerSettingsRoutes);
 router.use("/charger-weekly-schedule", chargerWeeklyScheduleRoutes);
 router.use("/chargers", chargersRoutes);
 router.use("/charging-sessions", chargingSessionsRoutes);
+router.use("/connectors", connectorsRoutes);
 
 module.exports = router;
