@@ -4,6 +4,7 @@ const addressesRoutes = require("./addresses");
 const bookingHistoryRoutes = require("./bookingHistory");
 const bookingsRoutes = require("./bookings");
 const chargerConnectorsRoutes = require("./chargerConnectors");
+const chargerImagesRoutes = require("./chargerImages");
 
 /**
  * @openapi
@@ -62,5 +63,6 @@ router.use("/addresses", addressesRoutes);
 router.use("/booking-history", bookingHistoryRoutes);
 router.use("/bookings", bookingsRoutes);
 router.use("/charger-connectors", chargerConnectorsRoutes);
+router.use("/charger-images", chargerImagesRoutes);
 
 module.exports = router;
