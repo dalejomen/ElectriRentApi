@@ -34,6 +34,7 @@ const socialAccountsRoutes = require("./socialAccounts");
 const userRolesRoutes = require("./userRoles");
 const usersRoutes = require("./users");
 const vehiclesRoutes = require("./vehicles");
+const walletsRoutes = require("./wallets");
 
 /**
  * @openapi
@@ -122,5 +123,6 @@ router.use("/social-accounts", socialAccountsRoutes);
 router.use("/user-roles", userRolesRoutes);
 router.use("/users", usersRoutes);
 router.use("/vehicles", vehiclesRoutes);
+router.use("/wallets", walletsRoutes);
 
 module.exports = router;
