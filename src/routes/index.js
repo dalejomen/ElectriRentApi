@@ -3,6 +3,7 @@ const router = express.Router();
 const addressesRoutes = require("./addresses");
 const bookingHistoryRoutes = require("./bookingHistory");
 const bookingsRoutes = require("./bookings");
+const chargerConnectorsRoutes = require("./chargerConnectors");
 
 /**
  * @openapi
@@ -60,5 +61,6 @@ router.get("/vehicles", (req, res) => {
 router.use("/addresses", addressesRoutes);
 router.use("/booking-history", bookingHistoryRoutes);
 router.use("/bookings", bookingsRoutes);
+router.use("/charger-connectors", chargerConnectorsRoutes);
 
 module.exports = router;
